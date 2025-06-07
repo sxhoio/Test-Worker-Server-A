@@ -1,0 +1,6 @@
+﻿// Generated file for commit 5
+// Commit message: Create user registration endpoint
+// Created at: 08/06/2025 16:30:32
+Feature: Create user registration endpoint
+Status: Implemented
+Version: 1.4.0
