@@ -31,13 +31,8 @@ for /l %%i in (1,1,60) do (
     
     :: 添加到暂存区
     git add dummy.txt
-    
-    :: 设置GIT_AUTHOR_DATE和GIT_COMMITTER_DATE环境变量
-    set GIT_AUTHOR_DATE=!commit_date!T12:00:00
-    set GIT_COMMITTER_DATE=!commit_date!T12:00:00
-    
     :: 提交
-    git commit -m "伪造提交 %%i - !commit_date!" >nul
+    git commit -m "伪造提交"
     
     echo 已创建提交 %%i/60 - 日期: !commit_date!
 )
